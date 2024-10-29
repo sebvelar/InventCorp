@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventCorp
 {
-    public class Envio
+    public abstract class Envio
     {
         public string NumeroEnvio { get; set; }
         public string Destinatario { get; set;} 
@@ -14,6 +14,10 @@ namespace InventCorp
         public string Estado { get; set; }
 
 
+        public abstract void ActualizaEstado(string nuevoEstado);
+
+        public abstract void MostrarDetalles();
+   
 
 
 
