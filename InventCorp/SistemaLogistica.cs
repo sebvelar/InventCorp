@@ -28,7 +28,7 @@ namespace InventCorp
                         $"Numero Envio: {thisEnvio.NumeroEnvio} \n" +
                         $"Destinatario: {thisEnvio.Destinatario} \n" +
                         $"Direccion: {thisEnvio.Direccion} \n" +
-                        $"Estado: {thisEnvio.Estado}");
+                        $"Estado: {thisEnvio.Estado}\n\n15");
                     return;
                 }
             }

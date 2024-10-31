@@ -8,13 +8,13 @@ namespace InventCorp
 {
     internal class EnvioAereo : Envio
     {
-
         public int NumeroVuelo { get; set; }
 
-        public EnvioAereo(int numeroVuelo)
+        public EnvioAereo(string numeroEnvio, string destinatario, string direccion, string estado, int numeroVuelo) : base(numeroEnvio, destinatario, direccion, estado)
         {
             NumeroVuelo = numeroVuelo;
         }
+
 
         public override void ActualizaEstado(string nuevoEstado)
         {
@@ -23,7 +23,7 @@ namespace InventCorp
 
         public override void MostrarDetalles()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Numero envio: {NumeroEnvio}, Numero Vuelo: {NumeroVuelo}");
         }
     }
 }
